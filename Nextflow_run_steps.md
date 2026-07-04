@@ -14,7 +14,7 @@ Once the PlateMaps, Load_data_files and samplesheet are in your s3 directory, yo
 As before, if you are using different channels than the CQDM U2OS project, you have to create your **Illumination Correction cpippe**, save it where you like it and add it to the nextflow command line
 
 5-Launch nextflow from the command line on the supercomputer or VS code.
-To launch nextflow, you have to be here : /home/dcmacho/pipelines/Saguaro-Biosciences-lembeddingscellprofileling. If not, use this path after `nextflow run` (instead of the dot) in the nextflow command.
+To launch nextflow, you have to be here : `/home/dcmacho/pipelines/Saguaro-Biosciences-lembeddingscellprofileling`. If not, use this path after `nextflow run` (instead of the dot) in the nextflow command.
 The command:
 ```bash
 nextflow run /home/dcmacho/pipelines/Saguaro-Biosciences-lembeddingscellprofileling -profile docker --input /mnt/s3_results/IRIC/Phenotypic_screen_HY-L022-custom_U2OS/Remix2_rerun/samplesheet.csv --channels 'DNA CL640 CL488R CL488Y' --xgb_model_path /home/dcmacho/Documents/DeadCellClass/dead_cell_classifier_final.json --outdir /home/dcmacho/nextflow_res/ --NAS_folder /mnt/ugreen_nas_v3/clientsdata
