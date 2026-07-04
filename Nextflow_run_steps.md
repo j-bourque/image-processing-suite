@@ -21,6 +21,7 @@ nextflow run /home/dcmacho/pipelines/Saguaro-Biosciences-lembeddingscellprofilel
 ```
 
 *If your are using U2OS, you can use the xgb classifier, if another type of cells, no.
+
 **If you want to see the help functions:
 ```bash
 nextflow run /home/dcmacho/pipelines/Saguaro-Biosciences-lembeddingscellprofileling --help
